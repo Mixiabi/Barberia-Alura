@@ -1,0 +1,11 @@
+body{                           /* aplica a todo el fondo de la pag */
+    background: #CCCCCC;
+}
+
+p{                              /* selector */
+    text-align: center;
+}
+
+em strong{                      /* referenciando estilo a em y strong */
+    color: red;
+}
