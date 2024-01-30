@@ -2,10 +2,19 @@ body{                           /* aplica a todo el fondo de la pag */
     background: #CCCCCC;
 }
 
+h1{
+    text-align: center;
+}
+
 p{                              /* selector */
     text-align: center;
+    
 }
 
 em strong{                      /* referenciando estilo a em y strong */
     color: red;
+}
+
+#mision{                        /* selector de ID - # */
+    font-size: 20px;
 }
