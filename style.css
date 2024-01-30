@@ -1,5 +1,9 @@
 body{                           /* aplica a todo el fondo de la pag */
-    
+   
+}
+
+.titulo-principal{
+    padding-left: 30px;
 }
 
 #banner{
@@ -11,7 +15,7 @@ body{                           /* aplica a todo el fondo de la pag */
     padding: 20px;
 }
 
-h1{
+.titulo-centralizado{
     text-align: center;
 }
 
@@ -30,10 +34,6 @@ em strong{                      /* referenciando estilo a em y strong */
 .diferenciales{
     background: white;
     padding: 30px;
-}
-
-h2{
-    text-align: center;
 }
 
 .items{                         /*referenciar una CLASE - . */
