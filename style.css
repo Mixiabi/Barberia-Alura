@@ -1,5 +1,14 @@
 body{                           /* aplica a todo el fondo de la pag */
+    
+}
+
+#banner{
+    width: 100%;
+}
+
+.principal{
     background: #CCCCCC;
+    padding: 20px;
 }
 
 h1{
@@ -8,7 +17,6 @@ h1{
 
 p{                              /* selector */
     text-align: center;
-    
 }
 
 em strong{                      /* referenciando estilo a em y strong */
@@ -17,4 +25,28 @@ em strong{                      /* referenciando estilo a em y strong */
 
 #mision{                        /* selector de ID - # */
     font-size: 20px;
+}
+
+.diferenciales{
+    background: white;
+    padding: 30px;
+}
+
+h2{
+    text-align: center;
+}
+
+.items{                         /*referenciar una CLASE - . */
+    font-style: italic;
+}
+
+ul{
+    display: inline-block;      /* ocupa solo el espacio de contenido, y el sobrante se ajuste 
+    block en las lista e inline para imagenes*/
+    vertical-align: top;
+    width: 20%;
+}
+
+.imagenDiferencial{
+    width: 50%;
 }
