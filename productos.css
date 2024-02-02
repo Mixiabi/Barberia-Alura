@@ -1,5 +1,19 @@
 header{
     background-color: #BBBBBB;
+    padding: 20px; /* espacio externo */
+}
+
+.caja{
+    /* nomrla la cantidad de px en pantalla 900px= 70%*/
+    width: 940px;
+    position: relative;/* nomrla la cantidad de px en pantalla */
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 110px;
 }
 
 nav li{
@@ -16,3 +30,11 @@ nav a{
     text-decoration: none;  /* retirar subrayado por defecto para vinculos */
 }
 
+main{
+    display: inline-block;
+}
+
+.tipo-producto{
+    position: absolute;
+    
+}

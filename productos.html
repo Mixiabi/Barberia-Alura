@@ -5,30 +5,62 @@
     <head>
         <meta charset="UTF-8">
         <title>Productos - Barberia Alura</title>
+        <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="productos.css">
+
     </head>
 
     <body>
-
+        
         <header>
-
-            <!-- ET h1 para darle importancia -->
-            <h1><img class="logo-barberia" src="imagenes/logo.png"></h1>
             
-            <!-- ET nav para colocar panel de navegacion -->
-            <nav>
-                <ul class="navegacion">
+            <div class="caja"><!-- encapsulan h1 y logo,panel de navegacion -->
 
-                    <!-- ET a para redireccionar a otras pagina 
-                        ET li ocupa el 100% de espacio-pag -->
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="productos.html">Productos</a></li>
-                    <li><a href="contactos.html">Contacto</a></li>   
+                <!-- ET h1 para darle importancia -->
+                <h1><img class="logo-barberia" src="imagenes/logo.png"></h1>
+            
+                <!-- ET nav para colocar panel de navegacion -->
+                <nav>
+                    <ul class="navegacion">
 
-                </ul>
-            </nav>
+                        <!-- ET a para redireccionar a otras pagina 
+                            ET li ocupa el 100% de espacio-pag -->
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contactos.html">Contacto</a></li>   
+
+                    </ul>
+                </nav>
+            </div>
+                       
 
         </header>
+        <!-- ET especifica para el cuerpo de la pagina -->
+        <main> 
+
+            <ul>
+                <li>
+                    <h2 class="tipo-producto">Cabello</h2>
+                    <img src="imagenes/cabello.jpg">
+                    <p class="precio">S/ 50.00</p>
+                    <p class="texto-relleno"></p>
+                </li>
+
+                <li>
+                    <h2 class="tipo-producto">Barba</h2>
+                    <img src="imagenes/barba.jpg">
+                    <p class="precio">S/ 30.00</p>
+                    <p class="texto-relleno"></p>
+                </li>
+                <li>
+                    <h2 class="tipo-producto">Cabello + Barba</h2>
+                    <img src="imagenes/cabello+barba.jpg">
+                    <p class="precio">S/ 75.00</p>
+                    <p class="texto-relleno"></p>
+                </li>
+            </ul>
+
+        </main>
 
     
     </body>
