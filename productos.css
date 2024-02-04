@@ -22,12 +22,19 @@ nav li{
     margin: 0 0 0 15px;
 }
 
-nav a{
+nav a{ /* se refiere a los link*/
     text-transform: uppercase;
     color: #000000;
     font-weight: bold;  /* negrita */
     font-size: 22px;
     text-decoration: none;  /* retirar subrayado por defecto para vinculos */
+
+}
+
+nav a:hover{ /* captura el mov del cursor cambia */
+    color: crimson;
+    
+
 }
 
 .productos{
@@ -45,17 +52,39 @@ nav a{
     margin: 0 1.5%; /*arriba y abajo 0 y der/izq 1.5%*/
     padding: 30px 20px;
     box-sizing: border-box;/*borde de cada item el limite definido*/
-    
+
     /* border: 2px solid #000000;   border simplificado*/
     border: #000000;
     border-width: 2px;
     border-style:solid;
+
+    /* border-top-left-radius: 5px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 80px;
+    border-bottom-left-radius: 50px;        
+    border-radius: 5px 100px 80px 50px
+    tipos de bordes*/
     border-radius:20px;
+    /* box-shadow: 0 0 6px 6px; */
+    
+}
+
+.productos li:hover{/*captura mov mouse*/
+    border-color: #c78c19;
+    font-size:  2.0625rem;
+}
+
+.productos li:active{
+    border-color: #088c19;
 }
 
 .productos h2{
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: bold;
+}
+
+.productos li:hover h2{
+    font-size: 2.0625rem;
 }
 
 .producto-descripcion{
