@@ -26,7 +26,7 @@ nav a{ /* se refiere a los link*/
     text-transform: uppercase;
     color: #000000;
     font-weight: bold;  /* negrita */
-    font-size: 22px;
+    font-size: 1.375rem;
     text-decoration: none;  /* retirar subrayado por defecto para vinculos */
 
 }
@@ -38,9 +38,9 @@ nav a:hover{ /* captura el mov del cursor cambia */
 }
 
 .productos{
-    width: 940px;   /*ocupe el 980 px del total pagina*/
+    width: 58.75rem;   /*ocupe el 980 px del total pagina*/
     margin: 0 auto;
-    padding: 50px;
+    padding: 3.125rem;
 
 }
 
@@ -50,12 +50,12 @@ nav a:hover{ /* captura el mov del cursor cambia */
     width: 30%;
     vertical-align: top;
     margin: 0 1.5%; /*arriba y abajo 0 y der/izq 1.5%*/
-    padding: 30px 20px;
+    padding: 1.875rem 1.25rem;
     box-sizing: border-box;/*borde de cada item el limite definido*/
 
     /* border: 2px solid #000000;   border simplificado*/
     border: #000000;
-    border-width: 2px;
+    border-width: .125rem;
     border-style:solid;
 
     /* border-top-left-radius: 5px;
@@ -64,7 +64,7 @@ nav a:hover{ /* captura el mov del cursor cambia */
     border-bottom-left-radius: 50px;        
     border-radius: 5px 100px 80px 50px
     tipos de bordes*/
-    border-radius:20px;
+    border-radius:1.25rem;
     /* box-shadow: 0 0 6px 6px; */
     
 }
@@ -72,6 +72,7 @@ nav a:hover{ /* captura el mov del cursor cambia */
 .productos li:hover{/*captura mov mouse*/
     border-color: #c78c19;
     font-size:  2.0625rem;
+    /* touch-action: pinch-zoom; */
 }
 
 .productos li:active{
@@ -88,13 +89,29 @@ nav a:hover{ /* captura el mov del cursor cambia */
 }
 
 .producto-descripcion{
-    font-size: 18px;
-    padding: 10px;
+    font-size: 1.125rem;
+    padding: .625rem;
 }
 
 .producto-precio{
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: .625rem;
 
+}
+
+footer{
+    text-align: center;
+    /* background-color: #088c19; */
+    background: url(imagenes/bg.jpg);/*branckgroung image,repite patron hasta ocupar el 100% pag*/
+    padding: 2.5rem;
+}
+
+/*footer junto con p no es buena practica*/
+
+.copyright{
+    /* padding:  1.25rem; */
+    color: white;
+    font-size: .8125rem;
+    margin: 1.25rem;
 }
