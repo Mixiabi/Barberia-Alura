@@ -7,49 +7,79 @@
             <meta charset="UTF-8">      <!-- meta ET charset def diccionario-->
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Barberia Alura</title>       <!-- ET tittle -->
-            <link rel="stylesheet" href="style.css"> <!-- ET referencia  -->
+            <link rel="stylesheet" href="reset.css">
+            <link rel="stylesheet" href="style-home.css"> <!-- ET referencia  -->
         
         </head>
 
         <body>  <!-- ET conten  -->
 
             <!-- ET encabezado -->
-            <header>       <!-- titulo principal -->
-                <h1 class="titulo-principal">Barberia Alura</h1>
-            </header>
-
-
-            <img id="banner" src="banner/banner.jpg">
+            <header>
             
-            <div class="principal">
-
-                <h2 class="titulo-centralizado">Sobre la Barbería Alura</h2>   <!-- Metodologia inline  --> 
-
-                <p>Ubicada en el corazón de la ciudad, la <strong>Barbería Alura</strong> trae para el mercado lo que hay de mejor para su cabello y barba. Fundada en 2020, la Barbería Alura ya es destaque en la ciudad y conquista nuevos clientes diariamente. </p>
+                <sec class="caja"><!-- encapsulan h1 y logo,panel de navegacion -->
+    
+                    <!-- ET h1 para darle importancia -->
+                    <h1><img class="logo-barberia" src="imagenes/logo.png"></h1>
                 
-                <!-- defino una PROP style -->
-                <p id="mision"><em>Nuestra misión es: <strong>"Proporcionar autoestima y calidad de vida a nuestros clientes"</strong>.</em></p>
+                    <!-- ET nav para colocar panel de navegacion -->
+                    <nav>
+                        <ul class="navegacion">
+    
+                            <!-- ET a para redireccionar a otras pagina 
+                                ET li ocupa el 100% de espacio-pag -->
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="productos.html">Productos</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>   
+    
+                        </ul>
+                    </nav>
+                </div>            
+    
+            </header>
+    
 
-                <p>Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimiento en el mundo de la moda, para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un padrón de excelencia y agilidad, garantizando calidad y satisfacción de nuestros clientes.</p>
 
-            </div>
+            <img class="banner" src="banner/banner.jpg">
+            
+            <main>
 
-            <div class="diferenciales">
+                <section class="principal">
 
-                <h3 class="titulo-centralizado">Diferenciales</h3>
+                    <h2 class="titulo-centralizado">Sobre la Barbería Alura</h2>   <!-- Metodologia inline  --> 
+
+                    <p>Ubicada en el corazón de la ciudad, la <strong>Barbería Alura</strong> trae para el mercado lo que hay de mejor para su cabello y barba. Fundada en 2020, la Barbería Alura ya es destaque en la ciudad y conquista nuevos clientes diariamente. </p>
+                    
+                    <!-- defino una PROP style -->
+                    <p id="mision"><em>Nuestra misión es: <strong>"Proporcionar autoestima y calidad de vida a nuestros clientes"</strong>.</em></p>
+
+                    <p>Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimiento en el mundo de la moda, para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un padrón de excelencia y agilidad, garantizando calidad y satisfacción de nuestros clientes.</p>
+
+                </section>
+
+                <section class="diferenciales">
+
+                    <h3 class="titulo-centralizado">Diferenciales</h3>
+                    
+                    <ul>    <!-- UL es ET de bloque ocupan espacio -->
+
+                        <li class="items">Atencion Personalizada</li>
+                        <li class="items">Espacio diferenciado</li>
+                        <li class="items">localizacion</li>
+                        <li class="items">Profesionales calificados</li>
+
+                    </ul>
+
+                    <img class="imagenDiferencial" src="diferenciales/diferenciales.jpg">
+
+                </section>
                 
-                <ul>    <!-- UL es ET de bloque ocupan espacio -->
+            </main>
 
-                    <li class="items">Atencion Personalizada</li>
-                    <li class="items">Espacio diferenciado</li>
-                    <li class="items">localizacion</li>
-                    <li class="items">Profesionales calificados</li>
-
-                </ul>
-
-                <img class="imagenDiferencial" src="diferenciales/diferenciales.jpg">
-
-            </div>
+            <footer>
+                <img src="imagenes/logo-blanco.png">
+                <p class="copyright">© Copyright Barberia Alura - 2024</p>
+            </footer>
 
         </body>
 

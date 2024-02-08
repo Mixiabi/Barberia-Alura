@@ -1,0 +1,108 @@
+header{
+    background-color: #BBBBBB;
+    padding: 20px; /* espacio externo */
+    
+}
+
+.caja{
+    /* nomrla la cantidad de px en pantalla 900px= 70%*/
+    width: 940px;
+    position: relative;/* nomrla la cantidad de px en pantalla */
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 110px;
+}
+
+nav li{
+    /* INLINE = no quiero que ocupe el 100% solo lo necesario */
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{ /* se refiere a los link*/
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;  /* negrita */
+    font-size: 1.375rem;
+    text-decoration: none;  /* retirar subrayado por defecto para vinculos */
+
+}
+
+nav a:hover{ /* captura el mov del cursor cambia */
+    color: crimson;
+}
+
+
+
+
+
+
+
+.titulo-principal{
+    padding-left: 1.875rem;
+}
+
+#banner{
+    width: 100%;
+}
+
+.principal{
+    background: #CCCCCC;
+    padding: 1.25rem;
+}
+
+.titulo-centralizado{
+    text-align: center;
+}
+
+p{                              /* selector */
+    text-align: center;
+}
+
+em strong{                      /* referenciando estilo a em y strong */
+    color: red;
+}
+
+#mision{                        /* selector de ID - # */
+    font-size: 1.25rem;
+}
+
+.diferenciales{
+    background: white;
+    padding: 1.875rem;
+}
+
+.items{                         /*referenciar una CLASE - . */
+    font-style: italic;
+}
+
+ul{
+    display: inline-block;      /* ocupa solo el espacio de contenido, y el sobrante se ajuste 
+    block en las lista e inline para imagenes*/
+    vertical-align: top;
+    width: 20%;
+}
+
+.imagenDiferencial{
+    width: 50%;
+}
+
+footer{
+    text-align: center;
+    /* background-color: #088c19; */
+    background: url(imagenes/bg.jpg);/*branckgroung image,repite patron hasta ocupar el 100% pag*/
+    padding: 2.5rem;
+}
+
+/*footer junto con p no es buena practica*/
+
+.copyright{
+    /* padding:  1.25rem; */
+    color: white;
+    font-size: .8125rem;
+    margin: 1.25rem;
+}
