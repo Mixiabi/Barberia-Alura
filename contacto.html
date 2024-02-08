@@ -45,12 +45,35 @@
                     <input type="text" id="nombreapellido">
 
                     <label for="correoelectronico">Correo Electronico</label>
-                    <input type="email" id="correoelectronico">
+                    <input id="correoelectronico" type="email" >
 
                     <label for="telefono">Telefono</label>
-                    <input type="number" id="telefono">
+                    <input id="telefono" type="number" >
+
+                    <!-- ET para caja de texto especial -->
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" cols="70" rows="10"></textarea>
+
+                    <div>
+                        <p>Como le gustaria que lo contactemos?</p>
+
+                        <!-- mismo grupo de input = name para una sola seleccion de opcion-->
+                        <label for="radio-email">Email</label>
+                        <input id="radio-email" name="contacto" type="radio" value="email">
+                        
+                        <label for="radio-telefono">Telefono</label>
+                        <input id="radio-telefono" name="contacto" type="radio" value="telefono">
+                        
+                        <label for="radio-whatsapp">WhatsApp</label>
+                        <input id="radio-whatsapp" name="contacto" type="radio" value="whatsapp">
+
+                    </div>
+
+                    <!-- lo relacionamos para no usar id o for -->
+                    <label for=""><input type="checkbox">Le gustaria recibir novedades de la Barberia Alura</label>
 
                     <input type="submit" value="Enviar formulario">
+                </form>   
             </main>
 
             <footer>
