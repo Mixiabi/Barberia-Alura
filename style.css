@@ -133,15 +133,43 @@ form{
     margin: 2.5rem 0rem;
 }
 
-form label{
+form label, form p{
     display: block;
     font-size: 1.25rem;
     margin: 0 0 .625rem;
 }
 
-form input{
+.input-padron{
     display: block;
     margin: 0 0 1.25rem;
     padding: .625rem 1.5625rem;
     width: 50%;
+}
+
+.checkbox{
+    margin: 1.25rem 0rem;
+}
+
+form p{
+    color: blue;
+}
+
+p{
+    color: red;
+
+}
+
+
+
+.test{
+    color: yellow;
+}
+
+
+p.test{
+    color: orange;
+}
+
+#test{
+    color: pink;
 }

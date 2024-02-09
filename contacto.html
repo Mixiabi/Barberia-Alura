@@ -42,38 +42,52 @@
                 <form>
                     <!-- para poder casar al input y label -->
                     <label for="nombreapellido">Nombre y Apellido</label>
-                    <input type="text" id="nombreapellido">
+                    <input type="text" id="nombreapellido" class="input-padron">
 
                     <label for="correoelectronico">Correo Electronico</label>
-                    <input id="correoelectronico" type="email" >
+                    <input id="correoelectronico" type="email" class="input-padron">
 
                     <label for="telefono">Telefono</label>
-                    <input id="telefono" type="number" >
+                    <input id="telefono" type="number" class="input-padron">
 
                     <!-- ET para caja de texto especial -->
                     <label for="mensaje">Mensaje</label>
-                    <textarea id="mensaje" cols="70" rows="10"></textarea>
+                    <textarea id="mensaje" cols="70" rows="10" class="input-padron"></textarea>
 
                     <div>
-                        <p>Como le gustaria que lo contactemos?</p>
+                        <p class="test" id="test" style="color: purple;">Como le gustaria que lo contactemos?</p>
 
                         <!-- mismo grupo de input = name para una sola seleccion de opcion-->
-                        <label for="radio-email">Email</label>
-                        <input id="radio-email" name="contacto" type="radio" value="email">
+                        <!-- por dentro para tener el elem antes del text -->
+                        <label for="radio-email"><input id="radio-email" name="contacto" type="radio" value="email">Email</label>
                         
-                        <label for="radio-telefono">Telefono</label>
-                        <input id="radio-telefono" name="contacto" type="radio" value="telefono">
+                        <label for="radio-telefono"><input id="radio-telefono" name="contacto" type="radio" value="telefono">Telefono</label>
                         
-                        <label for="radio-whatsapp">WhatsApp</label>
-                        <input id="radio-whatsapp" name="contacto" type="radio" value="whatsapp">
+                        <label for="radio-whatsapp"><input id="radio-whatsapp" name="contacto" type="radio" value="whatsapp">WhatsApp</label>
+                        
+
+                    </div>
+
+                    <div>
+                        
+                        <!-- ET para lista de select -->
+                        <p>En cual horario prefiere ser atendido?</p>
+                        <select>
+                            <option>Mañana</option>
+                            <option>Tarde</option>
+                            <option>Noche</option>
+                        </select>
 
                     </div>
 
                     <!-- lo relacionamos para no usar id o for -->
-                    <label for=""><input type="checkbox">Le gustaria recibir novedades de la Barberia Alura</label>
+                    <label class="checkbox"><input type="checkbox">Le gustaria recibir novedades de la Barberia Alura</label>
+
 
                     <input type="submit" value="Enviar formulario">
-                </form>   
+
+                </form>  
+
             </main>
 
             <footer>
