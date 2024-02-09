@@ -1,16 +1,11 @@
 header{
-    background-color: #BBBBBB;
-    padding: 20px; /* espacio externo */
-    
+    background-color: gray;
 }
 
-.caja{
-    /* nomrla la cantidad de px en pantalla 900px= 70%*/
-    width: 940px;
-    position: relative;/* nomrla la cantidad de px en pantalla */
-    margin: 0 auto;
+.logo-barberia{
+    position: relative;
+    left: 12.5rem;
 }
-
 nav{
     position: absolute;
     top: 110px;
@@ -21,27 +16,23 @@ nav li{
     /* INLINE = no quiero que ocupe el 100% solo lo necesario */
     display: inline;
     margin: 0 0 0 15px;
+    
 }
 
 nav a{ /* se refiere a los link*/
     text-transform: uppercase;
     color: #000000;
     font-weight: bold;  /* negrita */
-    font-size: 1.375rem;
+    font-size: 22px;
     text-decoration: none;  /* retirar subrayado por defecto para vinculos */
 
 }
 
 nav a:hover{ /* captura el mov del cursor cambia */
     color: crimson;
+    
+
 }
-
-
-
-
-
-
-
 .titulo-principal{
     padding-left: 1.875rem;
 }

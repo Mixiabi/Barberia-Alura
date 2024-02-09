@@ -20,7 +20,7 @@
                 <sec class="caja"><!-- encapsulan h1 y logo,panel de navegacion -->
     
                     <!-- ET h1 para darle importancia -->
-                    <h1><img class="logo-barberia" src="imagenes/logo.png"></h1>
+                    <h1><img class="logo-barberia" src="imagenes/logo.png" alt="Logo de la Barberia Alura"></h1>
                 
                     <!-- ET nav para colocar panel de navegacion -->
                     <nav>
@@ -42,20 +42,22 @@
                 <form>
                     <!-- para poder casar al input y label -->
                     <label for="nombreapellido">Nombre y Apellido</label>
-                    <input type="text" id="nombreapellido" class="input-padron">
+                    <input type="text" id="nombreapellido" class="input-padron" required>
 
                     <label for="correoelectronico">Correo Electronico</label>
-                    <input id="correoelectronico" type="email" class="input-padron">
+                    <input id="correoelectronico" type="email" class="input-padron" placeholder="correo@dominio.com" required>
 
                     <label for="telefono">Telefono</label>
-                    <input id="telefono" type="number" class="input-padron">
+                    <input id="telefono" type="number" class="input-padron" placeholder="(+xx)xxx xxx xxx" required>
 
                     <!-- ET para caja de texto especial -->
                     <label for="mensaje">Mensaje</label>
-                    <textarea id="mensaje" cols="70" rows="10" class="input-padron"></textarea>
+                    <textarea id="mensaje" cols="70" rows="10" class="input-padron" placeholder="Dejanos tu mensaje" required></textarea>
 
-                    <div>
-                        <p class="test" id="test" style="color: purple;">Como le gustaria que lo contactemos?</p>
+                    <!-- agrupa items que pertenecen al mismo grupo relacionados al mismo evento NO usa p-->
+                    <fieldset>
+
+                        <legend>Como le gustaria que lo contactemos?</legend>
 
                         <!-- mismo grupo de input = name para una sola seleccion de opcion-->
                         <!-- por dentro para tener el elem antes del text -->
@@ -63,37 +65,38 @@
                         
                         <label for="radio-telefono"><input id="radio-telefono" name="contacto" type="radio" value="telefono">Telefono</label>
                         
-                        <label for="radio-whatsapp"><input id="radio-whatsapp" name="contacto" type="radio" value="whatsapp">WhatsApp</label>
+                        <label for="radio-whatsapp"><input id="radio-whatsapp" name="contacto" type="radio" value="whatsapp" checked>WhatsApp</label>
                         
 
-                    </div>
+                    </fieldset>
 
-                    <div>
-                        
+                    <fieldset>
+
                         <!-- ET para lista de select -->
-                        <p>En cual horario prefiere ser atendido?</p>
+                        <legend>En cual horario prefiere ser atendido?</legend>
                         <select>
                             <option>Mañana</option>
                             <option>Tarde</option>
                             <option>Noche</option>
                         </select>
 
-                    </div>
+                    </fieldset>
 
                     <!-- lo relacionamos para no usar id o for -->
-                    <label class="checkbox"><input type="checkbox">Le gustaria recibir novedades de la Barberia Alura</label>
+                    <label class="checkbox"><input type="checkbox" checked>Le gustaria recibir novedades de la Barberia Alura</label>
 
 
-                    <input type="submit" value="Enviar formulario">
+                    <input type="submit" value="Enviar formulario" class="enviar">
 
                 </form>  
 
             </main>
 
             <footer>
-                <img src="imagenes/logo-blanco.png">
+                <img src="imagenes/logo-blanco.png" alt="Logo de la Barberia Alura">
                 <p class="copyright">© Copyright Barberia Alura - 2024</p>
             </footer>
+
 
         </body>
 

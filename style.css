@@ -1,14 +1,15 @@
 header{
     background-color: #BBBBBB;
-    padding: 20px; /* espacio externo */
+    padding: 20px 0; /* espacio externo */
     
 }
 
-.caja{
+.caja{/*hablamos del contenedor div*/
     /* nomrla la cantidad de px en pantalla 900px= 70%*/
     width: 940px;
     position: relative;/* nomrla la cantidad de px en pantalla */
     margin: 0 auto;
+    
 }
 
 nav{
@@ -37,10 +38,6 @@ nav a:hover{ /* captura el mov del cursor cambia */
     
 
 }
-
-/* form{
-
-} */
 
 .productos{
     width: 58.75rem;   /*ocupe el 980 px del total pagina*/
@@ -121,6 +118,15 @@ footer{
     margin: 1.25rem;
 }
 
+
+
+
+
+
+
+
+
+
 main{
     /* una pantalla padron 1270 -uso 940 para centrar algo */
     width: 58.75rem;
@@ -133,7 +139,7 @@ form{
     margin: 2.5rem 0rem;
 }
 
-form label, form p{
+form label, form legend{
     display: block;
     font-size: 1.25rem;
     margin: 0 0 .625rem;
@@ -150,26 +156,26 @@ form label, form p{
     margin: 1.25rem 0rem;
 }
 
-form p{
-    color: blue;
+.enviar{
+    width: 40%;
+    padding: .9375rem 0rem;
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: white;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    /* transition-duration: 5s; */
+    /* se ocupa javascript para efectos y visuales
+    en css como salida rapida  */
+    cursor:pointer;
 }
 
-p{
-    color: red;
-
-}
-
-
-
-.test{
-    color: yellow;
-}
-
-
-p.test{
-    color: orange;
-}
-
-#test{
-    color: pink;
+.enviar:hover{
+    background-color: blue;
+    /* transform: scale(1.2);
+    transform: rotate(360deg); */
+    transform: scale(1.2) rotate(180deg);
 }
