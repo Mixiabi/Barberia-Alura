@@ -179,3 +179,24 @@ form label, form legend{
     transform: rotate(360deg); */
     transform: scale(1.2) rotate(180deg);
 }
+
+table{
+    margin: 2.5rem 2.5rem;
+}
+
+thead{
+    color: white;
+    background-color: gray;
+    font-weight: bold;
+}
+
+/* th{
+    border: black 3px solid;
+}  para crear clase en varias tablas*/
+
+th,td{
+    border: crimson 3px solid;
+    padding: .5rem .9375rem;
+    /* padding-left: 30px;
+    padding-right: 30px; */
+}
