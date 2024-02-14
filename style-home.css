@@ -2,7 +2,7 @@ header{
     background-color: gray;
 }
 
-.logo-barberia{
+.caja{
     position: relative;
     left: 12.5rem;
 }
@@ -37,7 +37,7 @@ nav a:hover{ /* captura el mov del cursor cambia */
     padding-left: 1.875rem;
 }
 
-#banner{
+.banner{
     width: 100%;
 }
 
