@@ -1,3 +1,11 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+
+}
+
 header{
     background-color: #BBBBBB;
     padding: 20px 0; /* espacio externo */
@@ -225,10 +233,13 @@ th,td{
     /* 2 veces el tamano por defecto 15px=30px */
     font-size: 2em;
     margin: 0 0 1em;
+    /* cualquier configuracion despues de titulo-principal que lo alinie a la izq */
+    clear: left;
 }
 
 .principal p{
     margin: 0 0 1em;
+    
 }
 
 .principal strong{
@@ -236,6 +247,21 @@ th,td{
 }
 .principal em{
     font-style: italic;
+}
+
+.utensilios{
+    /* width: 10%; */
+    width: 120px;
+        /* display altera la forma en que el contenido ocupa la pagina */
+    /* display: inline; */
+
+        /* ubicar la imagen en cualquier lugar, ocurre desvicnulamiento sin redondeo de texto */
+    /* position:absolute; */
+
+        /* float deja espacio imagen despegada de pagina deja sombra ocupado en la misma proporcion y redondeando el texto */
+    float: left;
+    /* un solo margen para los 4 lados */
+    margin: 0 20px 20px 0 ;
 }
 
 .imagenDiferencial{
