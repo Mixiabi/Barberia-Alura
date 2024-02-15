@@ -248,6 +248,26 @@ th,td{
     clear: left;
 }
 
+/* alterar la PRIMER letra del titulo - PSEUDOELEMENTO
+.titulo-principal::first-letter{
+    font-weight: bold;
+}
+
+/* before colocar un corchete antes del titutlo*/
+/* .titulo-principal::before{ */
+    /* content: '['; */
+/* } */
+/* after */
+/* .titulo-principal::after{ */
+    /* content: ']'; */
+/* } */
+
+/* lllamo a todos los parrafos primera linea */
+/* p::first-line{ */
+    /* font-style: italic; */
+/* } */ 
+
+
 .principal p{
     margin: 0 0 1em;
     
@@ -299,7 +319,7 @@ th,td{
 }
 
 .contenido-diferenciales{
-    width: 40rem;
+    width: 640px;
     margin: 0 auto;
     
 }
@@ -316,6 +336,11 @@ th,td{
 .items{
     /* 1 + el 50% del padron original de la fuente */
     line-height: 1.5;
+}
+
+.items::before{
+    content: '★';
+    padding: 10px;
 }
 
 /* PSEUDOCLASE  primer elemento de ese bloque de elementos 'items' pintalo de negro
