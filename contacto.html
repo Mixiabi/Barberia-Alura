@@ -2,136 +2,134 @@
 
 <html lang="en">    <!-- idioma -->
 
-        <head>  <!-- ET infor  -->
+    <head>  <!-- ET infor  -->
+    
+        <meta charset="UTF-8">      <!-- meta ET charset def diccionario-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacto - Barberia Alura</title>       <!-- ET tittle -->
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css"> <!-- ET referencia  -->
         
-            <meta charset="UTF-8">      <!-- meta ET charset def diccionario-->
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Contacto - Barberia Alura</title>       <!-- ET tittle -->
-            <link rel="stylesheet" href="reset.css">
-            <link rel="stylesheet" href="style.css"> <!-- ET referencia  -->
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
-        
-        </head>
-        
-        <body>  <!-- ET conten  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    
+    </head>
+    
+    <body>  <!-- ET conten  -->
 
-            <!-- ET encabezado -->
-            <header>
+        <!-- ET encabezado -->
+        <header>
+            <div class="caja"><!-- encapsulan h1 y logo,panel de navegacion -->
+                <!-- ET h1 para darle importancia -->
+                <h1><img class="logo-barberia" src="imagenes/logo.png"></h1>
             
-                <sec class="caja"><!-- encapsulan h1 y logo,panel de navegacion -->
-    
-                    <!-- ET h1 para darle importancia -->
-                    <h1><img class="logo-barberia" src="imagenes/logo.png" alt="Logo de la Barberia Alura"></h1>
-                
-                    <!-- ET nav para colocar panel de navegacion -->
-                    <nav>
-                        <ul class="navegacion">
-    
-                            <!-- ET a para redireccionar a otras pagina 
-                                ET li ocupa el 100% de espacio-pag -->
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="productos.html">Productos</a></li>
-                            <li><a href="contactos.html">Contacto</a></li>   
-    
-                        </ul>
-                    </nav>
-                </div>            
-    
-            </header>
+                <!-- ET nav para colocar panel de navegacion -->
+                <nav>
+                    <ul class="navegacion">
 
-            <main>
-                <form>
-                    <!-- para poder casar al input y label -->
-                    <label for="nombreapellido">Nombre y Apellido</label>
-                    <input type="text" id="nombreapellido" class="input-padron" required>
+                        <!-- ET a para redireccionar a otras pagina 
+                            ET li ocupa el 100% de espacio-pag -->
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>   
 
-                    <label for="correoelectronico">Correo Electronico</label>
-                    <input id="correoelectronico" type="email" class="input-padron" placeholder="correo@dominio.com" required>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-                    <label for="telefono">Telefono</label>
-                    <input id="telefono" type="number" class="input-padron" placeholder="(+xx)xxx xxx xxx" required>
+        <main>
+            <form>
+                <!-- para poder casar al input y label -->
+                <label for="nombreapellido">Nombre y Apellido</label>
+                <input type="text" id="nombreapellido" class="input-padron" required>
 
-                    <!-- ET para caja de texto especial -->
-                    <label for="mensaje">Mensaje</label>
-                    <textarea id="mensaje" cols="70" rows="10" class="input-padron" placeholder="Dejanos tu mensaje" required></textarea>
+                <label for="correoelectronico">Correo Electronico</label>
+                <input id="correoelectronico" type="email" class="input-padron" placeholder="correo@dominio.com" required>
 
-                    <!-- agrupa items que pertenecen al mismo grupo relacionados al mismo evento NO usa P si no LEGEND-->
-                    <fieldset>
+                <label for="telefono">Telefono</label>
+                <input id="telefono" type="number" class="input-padron" placeholder="(+xx)xxx xxx xxx" required>
 
-                        <legend>Como le gustaria que lo contactemos?</legend>
+                <!-- ET para caja de texto especial -->
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" cols="70" rows="10" class="input-padron" placeholder="Dejanos tu mensaje" required></textarea>
 
-                        <!-- mismo grupo de input = name para una sola seleccion de opcion-->
-                        <!-- por dentro para tener el elem antes del text -->
-                        <label for="radio-email"><input id="radio-email" name="contacto" type="radio" value="email">Email</label>
-                        
-                        <label for="radio-telefono"><input id="radio-telefono" name="contacto" type="radio" value="telefono">Telefono</label>
-                        
-                        <label for="radio-whatsapp"><input id="radio-whatsapp" name="contacto" type="radio" value="whatsapp" checked>WhatsApp</label>
-                        
+                <!-- agrupa items que pertenecen al mismo grupo relacionados al mismo evento NO usa P si no LEGEND-->
+                <fieldset>
 
-                    </fieldset>
+                    <legend>Como le gustaria que lo contactemos?</legend>
 
-                    <fieldset>
-
-                        <!-- ET para lista de select -->
-                        <legend>En cual horario prefiere ser atendido?</legend>
-                        <select>
-                            <option>Mañana</option>
-                            <option>Tarde</option>
-                            <option>Noche</option>
-                        </select>
-
-                    </fieldset>
-
-                    <!-- lo relacionamos para no usar id o for -->
-                    <label class="checkbox"><input type="checkbox" checked>Le gustaria recibir novedades de la Barberia Alura</label>
-
-
-                    <input type="submit" value="Enviar formulario" class="enviar">
-
-                </form>
-                
-                <table>
+                    <!-- mismo grupo de input = name para una sola seleccion de opcion-->
+                    <!-- por dentro para tener el elem antes del text -->
+                    <label for="radio-email"><input id="radio-email" name="contacto" type="radio" value="email">Email</label>
                     
-                    <!-- encabezado -->
-                    <thead>
-                        <tr>    
-                            <th>Dia</th>
-                            <th>Horario</th>
-                        </tr>
-                    </thead>
+                    <label for="radio-telefono"><input id="radio-telefono" name="contacto" type="radio" value="telefono">Telefono</label>
+                    
+                    <label for="radio-whatsapp"><input id="radio-whatsapp" name="contacto" type="radio" value="whatsapp" checked>WhatsApp</label>
+                    
 
-                    <!-- cuerpo -->
-                    <tbody>
-                        <tr>
-                            <td>Lunes</td>
-                            <td>08h ~ 20h</td>
-                        </tr>
+                </fieldset>
 
-                        <tr>
-                            <td>Miercoles</td>
-                            <td>08h ~ 20h</td>
-                        </tr>
+                <fieldset>
 
-                        <tr>
-                            <td>Viernes</td>
-                            <td>08h ~ 20h</td>
-                        </tr>
-                    </tbody>
+                    <!-- ET para lista de select -->
+                    <legend>En cual horario prefiere ser atendido?</legend>
+                    <select>
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select>
 
-                </table>
-  
+                </fieldset>
 
-            </main>
-
-            <footer>
-                <img src="imagenes/logo-blanco.png" alt="Logo de la Barberia Alura">
-                <p class="copyright">© Copyright Barberia Alura - 2024</p>
-            </footer>
+                <!-- lo relacionamos para no usar id o for -->
+                <label class="checkbox"><input type="checkbox" checked>Le gustaria recibir novedades de la Barberia Alura</label>
 
 
-        </body>
+                <input type="submit" value="Enviar formulario" class="enviar">
+
+            </form>
+            
+            <table>
+                
+                <!-- encabezado -->
+                <thead>
+                    <tr>    
+                        <th>Dia</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+
+                <!-- cuerpo -->
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>08h ~ 20h</td>
+                    </tr>
+
+                    <tr>
+                        <td>Miercoles</td>
+                        <td>08h ~ 20h</td>
+                    </tr>
+
+                    <tr>
+                        <td>Viernes</td>
+                        <td>08h ~ 20h</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+
+        </main>
+
+        <footer>
+            <img src="imagenes/logo-blanco.png" alt="Logo de la Barberia Alura">
+            <p class="copyright">© Copyright Barberia Alura - 2024</p>
+        </footer>
+
+
+    </body>
 
 </html>
